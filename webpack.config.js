@@ -25,7 +25,7 @@ module.exports = {
 	},
 	resolve: {
 		//查找module的话从这里开始查找
-		root: 'E:/my_project/react-tastList/src', //绝对路径
+		root: 'E:/my_project/react-taskList/src', //绝对路径
 		// 你现在可以使用 ``require('file')`` 来代替 ``require('file.coffee')`` 。
 		extensions: ['', '.js', '.json', '.coffee', '.jsx','css'],
 		//模块别名定义，方便后续直接引用别名，无须多写长长的地址
