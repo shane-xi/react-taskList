@@ -4,12 +4,12 @@ var TodoList = React.createClass({
 	render: function () {
 		return (
 			<div className="todo-list">
-			<h1 className="todo-title">React todoList</h1>
-		<TaskList todo={this.state.todoList} taskDel={this.handlerchange} taskComplete={this.handlerchange}></TaskList>
-		<div className="hr"></div>
-			<TaskCount todo={this.state.todoList}></TaskCount>
-		<NewTask todo={this.state.todoList} newList={this.handlerchange}></NewTask>
-		</div>
+				<h1 className="todo-title">React todoList</h1>
+				<TaskList todo={this.state.todoList} taskDel={this.handlerchange} taskComplete={this.handlerchange}></TaskList>
+				<div className="hr"></div>
+				<TaskCount todo={this.state.todoList}></TaskCount>
+				<NewTask todo={this.state.todoList} newList={this.handlerchange}></NewTask>
+			</div>
 		)
 	},
 	getInitialState: function () {
@@ -132,7 +132,7 @@ var NewTask = React.createClass({
 	},
 	handlerDel: function (e) {
 		e.preventDefault();
-		var inputNew = this.refs.inputNew;
+		var inputNew = this.refs.inputNew.getDOMNode();
 		inputNew.value = '';
 	}
 })
